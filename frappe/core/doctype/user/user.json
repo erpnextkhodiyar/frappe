@@ -17,6 +17,7 @@
   "column_break0",
   "full_name",
   "username",
+  "branch",
   "column_break_11",
   "language",
   "time_zone",
@@ -743,8 +744,7 @@
    "description": "Redirect to the selected app after login",
    "fieldname": "default_app",
    "fieldtype": "Select",
-   "label": "Default App",
-   "options": ""
+   "label": "Default App"
   },
   {
    "collapsible": 1,
@@ -811,6 +811,13 @@
    "fieldname": "dashboard",
    "fieldtype": "Check",
    "label": "Dashboard"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch Information",
+   "reqd": 1
   }
  ],
  "icon": "fa fa-user",
@@ -874,7 +881,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2025-03-17 11:29:39.254304",
+ "modified": "2025-06-12 10:24:47.771041",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
