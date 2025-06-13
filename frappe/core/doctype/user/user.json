@@ -881,7 +881,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2025-06-12 10:24:47.771041",
+ "modified": "2025-06-13 18:55:43.519434",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
@@ -916,6 +916,7 @@
  "row_format": "Dynamic",
  "search_fields": "full_name",
  "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
