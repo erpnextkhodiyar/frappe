@@ -233,7 +233,8 @@
    "fieldtype": "Link",
    "label": "Role Profile",
    "options": "Role Profile",
-   "permlevel": 1
+   "permlevel": 1,
+   "reqd": 1
   },
   {
    "fieldname": "roles_html",
@@ -881,7 +882,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2025-06-13 18:55:43.519434",
+ "modified": "2025-06-14 17:08:46.573446",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
@@ -909,6 +910,24 @@
   {
    "role": "Desk User",
    "select": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Enquiry",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Counsellor",
+   "share": 1
   }
  ],
  "quick_entry": 1,

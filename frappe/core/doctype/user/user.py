@@ -120,7 +120,7 @@ class User(Document):
 		redirect_url: DF.SmallText | None
 		reset_password_key: DF.Data | None
 		restrict_ip: DF.SmallText | None
-		role_profile_name: DF.Link | None
+		role_profile_name: DF.Link
 		roles: DF.Table[HasRole]
 		search_bar: DF.Check
 		send_me_a_copy: DF.Check
