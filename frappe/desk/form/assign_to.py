@@ -76,7 +76,7 @@ def add(args=None, *, ignore_permissions=False):
 			has_content = strip_html(description) or "<img" in description
 			if not has_content:
 				args["description"] = _("Assignment for {0} {1}").format(args["doctype"], args["name"])
-
+			
 			d = frappe.get_doc(
 				{
 					"doctype": "ToDo",
@@ -92,6 +92,15 @@ def add(args=None, *, ignore_permissions=False):
 				}
 			).insert(ignore_permissions=True)
 
+			if d.reference_type == "Lead":
+				frappe.share.add(
+					doctype=d.reference_type,
+					name=d.reference_name,
+					user=d.allocated_to,
+					read=True,
+					write=True,
+					share=True
+        		)
 			# set assigned_to if field exists
 			if frappe.get_meta(args["doctype"]).get_field("assigned_to"):
 				frappe.db.set_value(args["doctype"], args["name"], "assigned_to", assign_to)
