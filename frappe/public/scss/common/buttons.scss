@@ -95,11 +95,26 @@
 }
 
 .btn.btn-primary {
-	background-color: var(--btn-primary);
-	color: var(--neutral);
-	white-space: nowrap;
-	--icon-stroke: currentColor;
-	--icon-fill-bg: var(--btn-primary);
+  align-items: center;
+  background-image: linear-gradient(144deg, #00DDEB,#5B42F3 );
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: bold;
 
 	&:active {
 		color: var(--gray-100) !important;

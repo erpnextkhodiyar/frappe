@@ -2,10 +2,11 @@
 
 body {
 	@include media-breakpoint-up(sm) {
-		background-color: var(--bg-light-gray);
+		background: linear-gradient(135deg, #cbe5e7, #36d1dc);
 	}
 	.page-content-wrapper {
 		min-height: calc(100vh - 220px);
+		//background: linear-gradient(135deg, #5b86e5, #36d1dc);
 	}
 	.web-footer {
 		display: none;
@@ -207,7 +208,7 @@ body {
 	font-weight: 600;
 
 	img {
-		max-height: 42px;
+		max-height: 108px;
 	}
 
 	h4 {
